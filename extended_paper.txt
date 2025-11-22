@@ -1,0 +1,172 @@
+Estimation of Stress-Strength Reliability of Xgamma
+Exponential Distribution with Generalized Progressive
+Hybrid Censoring
+Abhimanyu Singh Yadav, Piyush Panwar
+Abstract
+This article focuses on the estimation of the stress-strength reliability parameter
+R = P (Y < X), where both the stress Y and strength X are assumed to follow a
+newly proposed extension of the one-parameter Xgamma distribution. The model’s
+structural and distributional properties are studied, and inference is carried out under
+generalized progressive hybrid censoring, which provides a unified framework encompassing both time and failure-based censoring mechanisms. Parameter estimation is
+performed under both classical and Bayesian approaches. In the classical setup, only
+the maximum likelihood estimation (MLE) method is considered. To quantify uncertainty, asymptotic confidence intervals for R are constructed using both the Fisher
+information and nonparametric bootstrap methods. In the Bayesian framework, the
+estimation is conducted using a gamma prior under the squared error loss function.
+The Bayes estimates are computed via Lindley’s approximation and Markov Chain
+Monte Carlo (MCMC) simulation. Credible intervals for the stress-strength reliability
+parameter are also obtained, and their coverage probabilities are evaluated. A Monte
+Carlo simulation study is carried out to compare the performance of the MLE and
+Bayesian estimates under various censoring scenarios in terms of bias, mean squared
+error, and coverage probability. The effectiveness and flexibility of the proposed model
+and estimation methods are demonstrated through two real data examples.
+
+Keywords: Stress-strength reliability; Xgamma distribution; Generalized progressive hybrid censoring; Bayesian estimation; Markov Chain Monte Carlo; Bootstrap confidence interval.
+
+1
+
+Introduction and genesis
+
+The CDF of the Xgamma-E (Xg-E) model is given by
+
+
+1 −λ x
+1
+2
+FXg-E (x; λ) = 1 − e
+2 + λ x + (λ x) | (x>0,λ>0) ,
+2
+2
+The PDF corresponding to the above CDF, given by
+
+
+1 −λ x
+1
+2
+fXg-E (x; λ) = λe
+1 + (λ x) .
+2
+2
+1
+
+(1)
+
+(2)
+
+In recent years, the estimation of stress-strength reliability R = P (Y < X), which quantifies the probability that a system’s strength exceeds the applied stress, has garnered significant attention in reliability and life-testing studies. While various classical and Bayesian
+approaches have been employed for this purpose under different lifetime distributions, most
+existing works focus on standard censoring schemes such as Type-I, Type-II, or progressive
+censoring. However, in practical applications, censoring often arises in more complex forms,
+and generalized progressive hybrid censoring has emerged as a more realistic and flexible
+alternative by accommodating both time and failure constraints. Additionally, although
+the Xgamma distribution exhibits flexible hazard shapes and has potential applicability in
+reliability modeling, its role in stress-strength analysis under complex censoring schemes remains largely unexplored. To address these gaps, this article proposes a new extension of the
+one-parameter Xgamma distribution and investigates the estimation of the stress-strength
+reliability parameter under generalized progressive hybrid censored data. The unknown
+parameters are estimated using the classical maximum likelihood method and Bayesian approaches with a gamma prior under the squared error loss function. The Bayesian estimates
+are obtained via Lindley’s approximation and Markov Chain Monte Carlo (MCMC) simulation. Confidence intervals are constructed using asymptotic theory and nonparametric
+bootstrap techniques, while Bayesian credible intervals are also developed and evaluated. A
+comparative Monte Carlo simulation study is conducted to assess the performance of classical
+and Bayesian estimators in terms of bias, mean squared error, and coverage probability. Furthermore, a modified goodness-of-fit test based on the Nikulin–Rao–Robson (NRR) statistic
+is introduced to evaluate the fit of the proposed model under both complete and censored
+data. The proposed methods are illustrated through two real-life data sets involving complete
+and right-censored observations.
+The remainder of this article is organized as follows: Section 2 introduces the proposed
+distribution and its properties; Section 3 describes the generalized progressive hybrid censoring scheme; Section 4 presents classical estimation and interval procedures; Section 5
+discusses Bayesian estimation techniques; Section 6 reports the results of simulation studies;
+Section 7 presents the goodness-of-fit test; Section 8 applies the methodology to real data;
+and Section 9 concludes with key findings and suggestions for future work.
+
+1.1
+
+Stress-strength reliability
+
+In mechanical engineering, stress-strength reliability is very frequently used to measure the
+performances of the equipment in use. Let X and Y denote the strength-stress RVs observed
+from the population Xg-E(λ1 ) and Xg-E(λ2 ), respectively. Then the probability P [Y < X]
+is called as stress-strength reliability parameter. It is denoted by R. The same is evaluated
+for the proposed model and is given by;
+Z ∞Z x
+R = Pr[Y < X] =
+f (x, λ1 ) f (y, λ2 )dx dy
+x=0 y=0
+(3)
+Z ∞
+=
+f (x, λ1 ) F (x, λ2 )dx,
+x=0
+
+using the PDF and CDF of the proposed model, R is calculated as;
+2
+
+Z ∞
+
+
+
+ 
+
+2 + λ2 x
+2
+1 −λ2 x
+1
+dx
+e
+1 + 2 (λ1 x) × 1 − 2 e
++ 12 (λ2 x)2
+x=0
+h
+i
+λ1
+2λ21 +λ22
+3λ21 λ2
+3λ21 λ22
+2
+=1−
+.
+1 + 2(λ1λ+λ
++
++
++
+2(λ1 +λ2 )2
+2(λ1 +λ2 )3
+(λ1 +λ2 )4
+2)
+2(λ1 + λ2 )
+
+1
+R = λ1
+2
+
+−λ1 x
+
+2
+
+Method of maximum likelihood estimation
+
+3
+
+Bootstrap confidence interval
+
+4
+
+Bayesian estimation
+
+5
+
+Monte Carlo simulation
+
+6
+
+Real data illustration
+
+7
+
+Concluding remark
+
+References
+content...
+
+3
+
+(4)
+
+
